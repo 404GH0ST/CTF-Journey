@@ -1,2 +1,2 @@
-# CTF_Journey
+# CTF Journey
 Just some CTFs challenges that I stumbled across
