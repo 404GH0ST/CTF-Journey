@@ -3,68 +3,32 @@ import random
 ciphertext = "zexqSNE{cVaLuM_xRxBuRs_vE_mTtAe_ToOiN_oEiK}"
 alphabet = "abcdefghijklmnopqrstuvwxyz"
 
-flag = ""
-known_key = [4]
-while flag[:7] != "vikeCTF":
-    for guess in range(27):
-        plaintext = ""
-        key = known_key + [guess for _ in range(len("vikeCTF") - len(known_key))]
-        print(key)
-        for i, c in enumerate(ciphertext):
-            if not c.isalpha():
-                plaintext += c
-                continue
-
-            offset = alphabet.find(c.lower())
-            rotation = key[i % len(key)]
-
-            result = alphabet[(offset - rotation) % len(alphabet)]
-            if c.islower():
-                plaintext += result
-            else:
-                plaintext += result.upper()
-
-        if plaintext[:7] == "vikeCTF":
-            print(f"Found correct key : {key}")
-            flag = plaintext
-            known_key = key
-        elif plaintext[:6] == "vikeCT":
-            print(f"Found key6 : {guess}")
-            known_key.append(guess)
-        elif plaintext[:5] == "vikeC":
-            print(f"Found key5 : {guess}")
-            known_key.append(guess)
-        elif plaintext[:4] == "vike":
-            print(f"Found key4 : {guess}")
-            known_key.append(guess)
-        elif plaintext[:3] == "vik":
-            print(f"Found key3 : {guess}")
-            known_key.append(guess)
-        elif plaintext[:2] == "vi":
-            print(f"Found key2 : {guess}")
-            known_key.append(guess)
-        elif plaintext[:1] == "v":
-            print(plaintext)
-            print(f"Found key1 : {guess}")
-            known_key.append(guess)
-        else:
-            plaintext = ""
-            key = known_key + [guess for _ in range(len("vikeCTF") - len(known_key))]
-
-def brute(msg, key):
-    plaintext = ""
-    key = known_key + [guess for _ in range(len("vikeCTF") - len(known_key))]
-    print(key)
-    for i, c in enumerate(ciphertext):
-        if not c.isalpha():
-            plaintext += c
-            continue
-
+known_flag = "vikeCTF"
+key = list()
+print("Brute Forcing the correct key")
+for i, c in enumerate(ciphertext[:7]):
+    for x in range(1,27):
+        known_key = key + [x for _ in range(len(known_flag))]
         offset = alphabet.find(c.lower())
-        rotation = key[i % len(key)]
-
+        rotation = known_key[i % len(known_key)]
         result = alphabet[(offset - rotation) % len(alphabet)]
-        if c.islower():
-            plaintext += result
-        else:
-            plaintext += result.upper()
+        if result == known_flag[i].lower():
+            key.append(x)
+            break
+print(f"Got the correct key : {key}")
+plaintext = ""
+for i, c in enumerate(ciphertext):
+    if not c.isalpha():
+        plaintext += c
+        continue
+
+    offset = alphabet.find(c.lower())
+    print(offset)
+    rotation = key[i % len(key)]
+    result = alphabet[(offset - rotation) % len(alphabet)]
+    if c.islower():
+        plaintext += result
+    else:
+        plaintext += result.upper()
+    
+print(f"Flag: {plaintext}")
