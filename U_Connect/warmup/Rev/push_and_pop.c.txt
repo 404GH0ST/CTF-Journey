@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+int main() {
+   
+    struct Stack* stack = createStack(100);
+
+    char *a, *b, *c, *d;
+    char *value1 = "\x4d\x50\x09\x09";
+    char *value2 = "\x93\x0a\xdc\x51";
+    char *value3 = "\xf4\x43\x29\x77";
+    char *value4 = "\x25\x85\x3b\xed";
+    char *value5 = "\x6a\x4b\x21\x3c";
+    char *value6 = "\x77\xb1\xbf\x4f";
+    char *value7 = "\xeb\x9d\x96\xcb";
+
+    push(stack, value1);
+    push(stack, value2);
+    a = pop(stack);
+    push(stack, value3);
+    push(stack, value4);
+    b = pop(stack);
+    push(stack, value5);
+    push(stack, value6);
+    c = pop(stack);
+    push(stack, value7);
+    d= pop(stack);
+
+    printf("The flag is {");
+    printf("%s%s%s%s", a,b,c,d);
+    printf("}\r\n");
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+FROM denoland/deno:alpine-1.30.0
+
+RUN mkdir -p /ctf
+WORKDIR /ctf
+COPY src/ .
+
+RUN deno cache main.ts
+
+RUN chmod 444 flag.txt
+RUN adduser -s /bin/bash -D ctf
+RUN chown -R ctf:ctf /ctf
+
+USER ctf
+CMD deno task dev

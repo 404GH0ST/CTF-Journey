@@ -1,0 +1,5 @@
+Open it with rawpixels.net or gimp
+==When using gimp please select image format to raw image data all check show all files
+-Change image type into RGB Alpha
+-Set offset to 1, width 960, and adjust the heigth
+-Flip the image vertically to read the flag

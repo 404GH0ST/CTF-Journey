@@ -1,0 +1,17 @@
+version: '1'
+
+services:
+  mongo:
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: admin
+  graphql:
+    build: graphql/
+    restart: always
+    links:
+      - "mongo"
+    ports:
+      - "8000:8000"
+    environment:
+      DB_URL: mongodb://admin:admin@mongo:27017

@@ -1,0 +1,1 @@
+flag = int.from_bytes(b"FLAG HERE","big"); print([flag := list(map(lambda x,y: x ^ (x >> 2 ** y), [flag], [i]))[0] for i in range(9)][-1])

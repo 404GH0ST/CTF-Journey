@@ -1,0 +1,16 @@
+POST /api/login HTTP/1.1
+Host: localhost:1337
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:1337/
+Content-Type: application/json
+Origin: http://localhost:1337
+Content-Length: 47
+Connection: close
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+
+{"username":"a","password":"b"}

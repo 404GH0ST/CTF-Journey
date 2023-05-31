@@ -1,0 +1,37 @@
+### Payload For joining two collection so that we can pull data from other collection
+# The template
+
+{
+    "$lookup":
+    {
+        "from": <collection to join,
+        "localField": <field from the input documents>,
+        "foreginField": <field from the documents of the "from" collection>,
+        "as": <output array field - can be string
+    }
+}
+
+# Normal Payload
+[
+    {
+        "$lookup": {
+            "from": "users",
+            "localField": "_id",
+            "foreginField": "_id",
+            "as": "joined"
+        }
+    }
+]
+
+
+# Better Payload, because it will works even if we don't have a maching value in the two collections
+
+[
+    {
+        "$lookup": {
+            "from": "users",
+            "pipeline": [{ "$match" : { "_id" : {"$ne": ""} } }],
+            "as": "userinfo"
+        }
+    }
+]

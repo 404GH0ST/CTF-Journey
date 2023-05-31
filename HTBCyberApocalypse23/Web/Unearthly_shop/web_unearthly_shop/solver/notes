@@ -1,0 +1,4 @@
+-Use $lookup to join users table to get admin password
+-Login to admin dashboard and craft MonologRCE or Guzzle RCE payload
+-Update user but add "access": "PAYLOAD_HERE"
+-Logout and login again as admin

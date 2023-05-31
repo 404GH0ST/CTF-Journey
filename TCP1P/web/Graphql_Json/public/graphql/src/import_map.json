@@ -1,0 +1,8 @@
+{
+    "imports": {
+        "mongoose": "npm:mongoose@6.8.4",
+        "graphql-yoga": "https://cdn.skypack.dev/graphql-yoga?dts",
+        "http": "https://deno.land/std@0.157.0/http/server.ts",
+        "config": "./config.ts"
+    }
+}

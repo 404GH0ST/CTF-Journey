@@ -1,0 +1,2 @@
+== How to ==
+__import__('os').system('sh')

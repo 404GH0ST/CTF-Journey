@@ -1,0 +1,2 @@
+== How to ==
+exec.__self__.open('flag.txt','r').read()

