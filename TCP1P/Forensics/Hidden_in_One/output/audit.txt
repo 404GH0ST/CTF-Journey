@@ -1,0 +1,25 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Mon May 15 22:38:13 2023
+Invocation: foremost chall.zip 
+Output directory: /home/agus/CTF_Events/TCP1P/Forensics/Hidden_in_One/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: chall.zip
+Start: Mon May 15 22:38:13 2023
+Length: 28 KB (28946 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.zip 	      192 B 	          0 	 
+1:	00000000.png 	      28 KB 	        192 	  (1280 x 720)
+Finish: Mon May 15 22:38:13 2023
+
+2 FILES EXTRACTED
+	
+zip:= 1
+png:= 1
+------------------------------------------------------------------
+
+Foremost finished at Mon May 15 22:38:13 2023

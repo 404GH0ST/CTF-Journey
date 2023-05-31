@@ -1,0 +1,23 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Fri Apr 14 11:23:45 2023
+Invocation: foremost tututututututut.wav 
+Output directory: /home/agus/CTF_Events/U_Connect/warmup/forensics/DIT&DAH/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: tututututututut.wav
+Start: Fri Apr 14 11:23:45 2023
+Length: 206 KB (211444 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.wav 	     206 KB 	          0 	 
+Finish: Fri Apr 14 11:23:45 2023
+
+1 FILES EXTRACTED
+	
+rif:= 1
+------------------------------------------------------------------
+
+Foremost finished at Fri Apr 14 11:23:45 2023
