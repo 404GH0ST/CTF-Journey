@@ -1,0 +1,25 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Sat Dec 16 10:02:39 2023
+Invocation: foremost babyhide.jpeg 
+Output directory: /home/agus/CTF_Events/CTF-Journey/TheCyberCooperativeCTF23/Forensics/babyhide/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: babyhide.jpeg
+Start: Sat Dec 16 10:02:39 2023
+Length: 122 KB (125041 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.jpg 	     114 KB 	          0 	 
+1:	00000229.pdf 	       7 KB 	     117430 	 
+Finish: Sat Dec 16 10:02:39 2023
+
+2 FILES EXTRACTED
+	
+jpg:= 1
+pdf:= 1
+------------------------------------------------------------------
+
+Foremost finished at Sat Dec 16 10:02:39 2023

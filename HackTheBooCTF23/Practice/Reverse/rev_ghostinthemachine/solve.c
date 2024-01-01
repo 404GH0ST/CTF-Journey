@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() {
+    
+    char *param_1;
+    param_1[0xf] = 0x74;
+    param_1[1] = 'T';
+    param_1[0x18] = 0x6e;
+    param_1[2] = 0x42;
+    param_1[4] = 0x65;
+    param_1[0x11] = 0x33;
+    param_1[0x15] = 99;
+    param_1[0x19] = 0x33;
+    param_1[6] = 0x30;
+    param_1[0x12] = 0x5f;
+    param_1[7] = 0x72;
+    param_1[9] = 0x31;
+    param_1[8] = 99;
+    param_1[5] = 0x78;
+    param_1[0x14] = 0x34;
+    param_1[0xd] = 0x67;
+    param_1[10] = 0x73;
+    param_1[0x1a] = 0x7d;
+    *param_1 = 'H';
+    param_1[3] = 0x7b;
+    param_1[0x13] = 0x6d;
+    param_1[0xc] = 0x6e;
+    param_1[0xb] = 0x31;
+    param_1[0x17] = 0x31;
+    param_1[0x10] = 0x68;
+    param_1[0xe] = 0x5f;
+    param_1[0x16] = 0x68;
+
+    printf("%s\n", param_1);
+    return 0;
+}

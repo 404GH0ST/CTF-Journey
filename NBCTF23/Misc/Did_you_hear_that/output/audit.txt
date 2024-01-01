@@ -1,0 +1,25 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Sat Dec  2 23:03:40 2023
+Invocation: foremost help.png 
+Output directory: /home/agus/CTF_Events/CTF-Journey/NBCTF23/Misc/Did_you_hear_that/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: help.png
+Start: Sat Dec  2 23:03:40 2023
+Length: 344 KB (352928 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000069.wav 	     310 KB 	      35364 	 
+1:	00000000.png 	      34 KB 	          0 	  (639 x 639)
+Finish: Sat Dec  2 23:03:40 2023
+
+2 FILES EXTRACTED
+	
+rif:= 1
+png:= 1
+------------------------------------------------------------------
+
+Foremost finished at Sat Dec  2 23:03:40 2023

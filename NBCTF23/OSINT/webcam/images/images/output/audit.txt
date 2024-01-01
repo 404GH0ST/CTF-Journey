@@ -1,0 +1,48 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Sun Dec  3 11:17:12 2023
+Invocation: foremost 1.png 2_downscaled.png 2.png 3.png 
+Output directory: /home/agus/CTF_Events/CTF-Journey/NBCTF23/OSINT/webcam/images/images/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: 1.png
+Start: Sun Dec  3 11:17:12 2023
+Length: 2 MB (2369767 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.png 	       2 MB 	          0 	  (1888 x 908)
+Finish: Sun Dec  3 11:17:12 2023
+------------------------------------------------------------------
+File: 2_downscaled.png
+Start: Sun Dec  3 11:17:12 2023
+Length: 6 MB (7021999 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+Finish: Sun Dec  3 11:17:12 2023
+------------------------------------------------------------------
+File: 2.png
+Start: Sun Dec  3 11:17:12 2023
+Length: 18 MB (19107858 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+Finish: Sun Dec  3 11:17:13 2023
+------------------------------------------------------------------
+File: 3.png
+Start: Sun Dec  3 11:17:13 2023
+Length: 2 MB (2882208 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+1:	00000000_1.png 	       2 MB 	          0 	  (1641 x 920)
+Finish: Sun Dec  3 11:17:13 2023
+
+2 FILES EXTRACTED
+	
+png:= 2
+------------------------------------------------------------------
+
+Foremost finished at Sun Dec  3 11:17:13 2023
