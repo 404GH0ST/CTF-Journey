@@ -1,0 +1,25 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Tue Apr  2 08:21:32 2024
+Invocation: foremost meme.png 
+Output directory: /home/agus/CTF/CTF-Journey/TCP1P_Ramadhan/Forensics/Audio_Images/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: meme.png
+Start: Tue Apr  2 08:21:32 2024
+Length: 612 KB (627378 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000315.wav 	     454 KB 	     161638 	 
+1:	00000000.png 	     157 KB 	          0 	  (337 x 600)
+Finish: Tue Apr  2 08:21:32 2024
+
+2 FILES EXTRACTED
+	
+rif:= 1
+png:= 1
+------------------------------------------------------------------
+
+Foremost finished at Tue Apr  2 08:21:32 2024

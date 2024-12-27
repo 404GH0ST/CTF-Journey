@@ -1,0 +1,69 @@
+Delivered-To: specters2024@gmail.com
+Received: by 2002:a05:7300:8d93:b0:114:fbc6:3fc9 with SMTP id h19csp727249dys;
+        Fri, 10 May 2024 16:28:57 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IETig5QeZbsL42I1/geIWdA5jV/sLqSkMor1S7YRhJLlrww1zIuPPJ1hSRT6MPqQrbOjHWd
+X-Received: by 2002:a17:903:245:b0:1eb:5682:1ec0 with SMTP id d9443c01a7336-1ef4404a22emr51826655ad.45.1715383736917;
+        Fri, 10 May 2024 16:28:56 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1715383736; cv=none;
+        d=google.com; s=arc-20160816;
+        b=R7Eg2UdoaGm5VFTjBRwRuDp0gaF982B/stQfIO6NuyvdlAt0UG7U0/S1yRCNrCn0YT
+         D2X/Z8dI80pdbCRKR3UnICr2mBBdAGuIqn2LHlZZRCK4rdXQE0DWlaSSLCzoPuR4TO9C
+         ytV7gbfLH7cL7/Mb52/SkJWB51990JQA99wXrBuLlFZ9mUiLPYsyamrt8GQJgTwlzlSB
+         tVn5eRAyo4/phAbf26U5smXid019VTwLfADFfkDD0iPczyJhZNBxoHvklTHefMlEcn6F
+         12NKZigmxwYHnrfKt7t2mBXfnPqbaT9aXyhjbRFVF6TzhJEUs720LeW2bFeoKCxS6mcn
+         eyKw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:content-transfer-encoding:message-id:mime-version:from:subject
+         :to:dkim-signature:dkim-filter;
+        bh=NTyLzaCvN8Ayddl8V8u3BwCf7x2Il7otn8n1yhppUBk=;
+        fh=1uThqvKEGKnCbS+/Br8wLKXUlO9c2a/28Td0pDrkPdU=;
+        b=bz8QmcUVtF+h/UvNQJDryVldsmQlJ5qZH1mvtYYm0GIpxQq3JxpjCe53kZB0gHDtj5
+         YVjWh3TyUBq5Ux0IgkH3aOEHhZb/2zf6D5BAHzqeONp8ZUChJVy/X1rsgHoae5YDgTMg
+         fycE0dvNZQlotgptNj/kis1g81jD4NNXG2KZB5297a0hSdhfAMdkpDR/+MroyU9kw4SD
+         o4qDGoPSkVz8r30niegLwHQwvK0Xy/+BkxbzQL3q9y8eoMshY/lPLwM5vD9whJBhaSCd
+         80KbYk8dcHgqT0nMt41KhwBcmRisr0+LsOTi+HujFBmBdKm7mlrCeUr1L03cI5AmNjfk
+         bRGA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@ccmail.uk header.s=ccmailuk header.b=UUXHq0Za;
+       spf=pass (google.com: domain of dryegotip@ccmail.uk designates 150.95.203.144 as permitted sender) smtp.mailfrom=dryegotip@ccmail.uk;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=ccmail.uk
+Return-Path: <dryegotip@ccmail.uk>
+Received: from send4.erinn.biz (send4.erinn.biz. [150.95.203.144])
+        by mx.google.com with ESMTPS id d9443c01a7336-1ef0bf314a2si33888635ad.279.2024.05.10.16.28.56
+        for <specters2024@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 10 May 2024 16:28:56 -0700 (PDT)
+Received-SPF: pass (google.com: domain of dryegotip@ccmail.uk designates 150.95.203.144 as permitted sender) client-ip=150.95.203.144;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@ccmail.uk header.s=ccmailuk header.b=UUXHq0Za;
+       spf=pass (google.com: domain of dryegotip@ccmail.uk designates 150.95.203.144 as permitted sender) smtp.mailfrom=dryegotip@ccmail.uk;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=ccmail.uk
+Received: by send4.erinn.biz (Postfix, from userid 48)
+	id 3CC0B808873F; Sat, 11 May 2024 08:28:55 +0900 (JST)
+DKIM-Filter: OpenDKIM Filter v2.11.0 send4.erinn.biz 3CC0B808873F
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=ccmail.uk;
+	s=ccmailuk; t=1715383735;
+	bh=NTyLzaCvN8Ayddl8V8u3BwCf7x2Il7otn8n1yhppUBk=;
+	h=To:Subject:From:Date:From;
+	b=UUXHq0Zamuw29AAshfCkwSRrrrVSAdTGYOHhFV1xsdI62x/lxfbtoNOvEU7dSYs4F
+	 EOBsMEc1iKrre0YNvaMadWBi7MH5FJR+Pe3qe9/HD8dbUb/671kXA2YC8U9LrG4Lgq
+	 qgR6B05U6e51ITTNuUdHbfQhY88hVm3BqQFh8c6Q=
+To: specters2024@gmail.com
+Subject: Nub
+From: dryegotip@ccmail.uk
+X-Mailer: InstAddr (Block this user: https://m.kuku.lu/u.php?t=c3BlY3RlcnMyMDI0QGdtYWlsLmNvbQ%3D%3D&f=ZHJ5ZWdvdGlwQGNjbWFpbC51aw%3D%3D&h=93353404118d935526086fd5fa7de713&c=1)
+X-Report-Abuse: <mailto:abuse+1715383735-1f0539ada62e4e8de15587956da645da__dryegotip____ccmail.uk@kuku.lu>
+X-Report-Abuse-Inquiry: https://magical.kuku.lu/page.contact.php?type=MailNow
+X-ServerTime: Sat, 11 May 2024 08:28:55 +0900 (JST)
+MIME-Version: 1.0
+Message-Id: <1715383735-1f0539ada62e4e8de15587956da645da__dryegotip@ccmail.uk>
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: base64
+Date: Sat, 11 May 2024 08:28:55 +0900 (JST)
+
+eW91IHdvbid0IGJlIGFibGUgdG8gZmluZCB0aGUgZmxhZyBoYWhhaGENCg0KaHR0cHM6Ly9kb2Nz
+Lmdvb2dsZS5jb20vZG9jdW1lbnQvZC8xdXpQSnQxcUxfbWg3TTVkdEZYeHNBZGhKSnB6Z1BlblhI
+dE5zUzVndzZPQS9lZGl0I2hlYWRpbmc9aC5lbjM4bGI4eTh4d3UNCg==
+
+

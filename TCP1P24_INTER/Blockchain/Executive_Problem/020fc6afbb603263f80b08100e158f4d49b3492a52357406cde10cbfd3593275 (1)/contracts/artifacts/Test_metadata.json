@@ -1,0 +1,94 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_new",
+						"type": "address"
+					}
+				],
+				"name": "changeAddress",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_new",
+						"type": "address"
+					}
+				],
+				"name": "changeAddress2",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "test",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Executive_Problem/020fc6afbb603263f80b08100e158f4d49b3492a52357406cde10cbfd3593275 (1)/contracts/Test.sol": "Test"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Executive_Problem/020fc6afbb603263f80b08100e158f4d49b3492a52357406cde10cbfd3593275 (1)/contracts/Test.sol": {
+			"keccak256": "0x37f5a5cf592ba707f679ae873124005a7401ca29538954846eae2f3777354cdf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7ff846346b551a5daa710e52ba2530ca8fc574688f810280975a7272c29a3069",
+				"dweb:/ipfs/QmY7kYfwkiB3dZUL4zX7P5SfudTkg62L7RcrP6a7rLKMeh"
+			]
+		}
+	},
+	"version": 1
+}

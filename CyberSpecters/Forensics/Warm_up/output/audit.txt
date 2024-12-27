@@ -1,0 +1,25 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Wed Mar 20 08:26:41 2024
+Invocation: foremost secret.jpeg 
+Output directory: /home/agus/CTF/CTF-Journey/CyberSpecters/Forensics/Warm_up/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: secret.jpeg
+Start: Wed Mar 20 08:26:41 2024
+Length: 278 KB (284807 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000555.zip 	      168 B 	     284640 	 
+1:	00000000.png 	     277 KB 	          0 	  (863 x 863)
+Finish: Wed Mar 20 08:26:41 2024
+
+2 FILES EXTRACTED
+	
+zip:= 1
+png:= 1
+------------------------------------------------------------------
+
+Foremost finished at Wed Mar 20 08:26:41 2024

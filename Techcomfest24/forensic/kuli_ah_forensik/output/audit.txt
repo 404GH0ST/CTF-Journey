@@ -1,0 +1,29 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Wed Jun 26 13:07:28 2024
+Invocation: foremost kobokanaeruluvluv.jpg 
+Output directory: /home/agus/CTF/CTF-Journey/Techcomfest24/forensic/kuli_ah_forensik/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: kobokanaeruluvluv.jpg
+Start: Wed Jun 26 13:07:28 2024
+Length: 3 MB (3409223 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.jpg 	      46 KB 	          0 	 
+1:	00000092.jpg 	      47 KB 	      47519 	 
+2:	00006564.jpg 	      47 KB 	    3360923 	 
+3:	00001846.zip 	       2 MB 	     945251 	 
+4:	00000377.png 	     518 KB 	     193266 	  (820 x 571)
+Finish: Wed Jun 26 13:07:28 2024
+
+5 FILES EXTRACTED
+	
+jpg:= 3
+zip:= 1
+png:= 1
+------------------------------------------------------------------
+
+Foremost finished at Wed Jun 26 13:07:28 2024

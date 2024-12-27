@@ -1,0 +1,10 @@
+1. What ports are open on the attacked machine? (ex: 1,2,3,4)
+22,5432
+2. What is the credentials used to access the database? (ex: root:root)
+server:changeme
+3. What is the password for the "super" user on the database?
+cafecoagroindustrialdelpacfico
+4. What table does the attacker modify?
+penalties
+5. It seems that the attacker has modified their own data, what is their full name?
+Lyubov Pryadko

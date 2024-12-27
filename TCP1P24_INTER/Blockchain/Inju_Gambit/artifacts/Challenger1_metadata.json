@@ -1,0 +1,86 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_target",
+						"type": "address"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "challengeManager",
+				"outputs": [
+					{
+						"internalType": "contract ChallengeManager",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Inju_Gambit/Setup.sol": "Challenger1"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Inju_Gambit/ChallengeManager.sol": {
+			"keccak256": "0x7fe957fb23af806ac77510514ea1547705c6452669d60de570a7200d2a3ac904",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://4ffabc02bb9bb8c22c2c308e5c85b8dc5285607bea5245b96a4f7c8b71bdb451",
+				"dweb:/ipfs/QmfBG5pbnkMkHscavQVi4EN3TSW55VufoPeeqZENZJCBvf"
+			]
+		},
+		"Inju_Gambit/Privileged.sol": {
+			"keccak256": "0x1ac607a9c870bdcae897f19da69bb16e698296860e5745acb1dfe614becdc2fb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fac4555f3cd1a04460bb062d338f7ec824b06098c32a56dec27ad50084210ab7",
+				"dweb:/ipfs/QmeBnCjP45xZ4c7DR7mxw72zMXG97Gij5a8qRR2gwTdBmd"
+			]
+		},
+		"Inju_Gambit/Setup.sol": {
+			"keccak256": "0x1a231aaa7668557bf2cc2ce5d534e41194b19e5b8e2931f6b429268904783118",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://70141764a3dfb436a3d5ef792f62dd74a4ad27b0659f5686771e0d4d10ab6eed",
+				"dweb:/ipfs/QmRxt8AUrqQLtiYmZdrFTzKL24W7KjZRytwHu8WNUm9RmX"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,106 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "coin",
+				"outputs": [
+					{
+						"internalType": "contract HCOIN",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isSolved",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_player",
+						"type": "address"
+					}
+				],
+				"name": "setPlayer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Baby-ERC20/contracts/Setup.sol": "Setup"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Baby-ERC20/contracts/HCOIN.sol": {
+			"keccak256": "0xd7fd0de11d31377a5f77569d8573dceca4737e6d154bc42428ba3656578f3e30",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ef675699d6b41e0b77bde1cff8793dcd6c7838dbc4e7732e55cad21d406e8187",
+				"dweb:/ipfs/QmVoQxU9DhsShNop2PxpH7MdaxCAoG17bLpzbxFJQhdcPz"
+			]
+		},
+		"Baby-ERC20/contracts/Ownable.sol": {
+			"keccak256": "0x1f3658ef35de300e77797804d3e562f613ab6e1600df57838cb9db5332c59e11",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://56522f8c657cc3edf7a0b596bd42b882a758d08295f7411eee906d74dbb5c935",
+				"dweb:/ipfs/QmXS7D75FA8UXHMZT5e3VgHcHeEQKf82rAt3tBHShvMAk2"
+			]
+		},
+		"Baby-ERC20/contracts/Setup.sol": {
+			"keccak256": "0xce7dacf692333cc12c5a5ed0bcd35e3029a3e12c781bd5dfc467b8f58e15be6b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3be614064c57f5c6c40d0edb571c9142962eed062ae9788ede2461ce8c31ada3",
+				"dweb:/ipfs/QmRimAJCVbMthTYPreCrDv5ZkiWQv7RgdGi8qUHQ8syxrE"
+			]
+		}
+	},
+	"version": 1
+}

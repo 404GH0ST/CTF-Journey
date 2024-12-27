@@ -1,0 +1,77 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					}
+				],
+				"name": "attack",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "test",
+				"outputs": [
+					{
+						"internalType": "contract Victim",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Executive_Problem/020fc6afbb603263f80b08100e158f4d49b3492a52357406cde10cbfd3593275 (1)/contracts/Test1.sol": "ThirdParty"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Executive_Problem/020fc6afbb603263f80b08100e158f4d49b3492a52357406cde10cbfd3593275 (1)/contracts/Test1.sol": {
+			"keccak256": "0xdf0069dd3954d071157fcc0b903689ebbe89789b277dbdfed22a3e90dc11c045",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://da48a05ff3a813514eded4da8da0fd7304c42fb4cb7f9143940e492125ad6368",
+				"dweb:/ipfs/QmXH7CUypnN4kRMgMStKDv2qzFFWtNT2TWyfmFpZkPbxKp"
+			]
+		}
+	},
+	"version": 1
+}

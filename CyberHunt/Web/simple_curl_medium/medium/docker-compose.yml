@@ -1,0 +1,9 @@
+version: "3"
+services:
+  terserah:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 21001:8080

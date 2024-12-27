@@ -4,8 +4,8 @@ import json
 def exchange(hex_list, value=0):
 
     # Configure according to your setup
-    host = '94.237.48.117'  # The server's hostname or IP address
-    port = 32737        # The port used by the server
+    host = '94.237.63.83'  # The server's hostname or IP address
+    port = 40566        # The port used by the server
     cs=0 # /CS on A*BUS3 (range: A*BUS3 to A*BUS7)
     
     usb_device_url = 'ftdi://ftdi:2232h/1'
@@ -38,5 +38,6 @@ def exchange(hex_list, value=0):
 
 
 # Example command
-jedec_id = exchange([0x9f], 120)
-print(jedec_id)
+jedec_id = exchange([0x03], 120) # 0x03 is Read Command
+
+print("".join(chr(x) for x in jedec_id))

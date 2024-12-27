@@ -1,0 +1,23 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Sat Jun  1 15:00:20 2024
+Invocation: foremost mencoba-kesempatan-ke-2-kali_4.jpg 
+Output directory: /home/agus/CTF/CTF-Journey/CyberHunt/Foren/Rumah_makan_on_day_monday/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: mencoba-kesempatan-ke-2-kali_4.jpg
+Start: Sat Jun  1 15:00:20 2024
+Length: 36 KB (37723 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.jpg 	      36 KB 	          0 	 
+Finish: Sat Jun  1 15:00:20 2024
+
+1 FILES EXTRACTED
+	
+jpg:= 1
+------------------------------------------------------------------
+
+Foremost finished at Sat Jun  1 15:00:20 2024

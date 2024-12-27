@@ -1,0 +1,40 @@
+  3           0 RESUME                   0
+
+  4           2 BUILD_LIST               0
+              4 LOAD_CONST               1 ((134, 178, 144, 170, 156, 168, 100, 104, 246, 232, 144, 146, 166, 190, 146, 230, 190, 160, 242, 232, 208, 96, 156, 190, 146, 220, 190, 200, 146, 166, 130, 166, 250))
+              6 LIST_EXTEND              1
+              8 STORE_FAST               0 (flag)
+
+  6          10 LOAD_CONST               2 (<code object dec at 0x000002AD4D9B1730, file "chall.py", line 6>)
+             12 MAKE_FUNCTION            0
+             14 STORE_FAST               1 (dec)
+             16 RETURN_CONST             0 (None)
+
+Disassembly of <code object dec at 0x000002AD4D9B1730, file "d:chall.py", line 6>:
+  6           0 RESUME                   0
+
+  7           2 LOAD_CONST               1 ('')
+              4 STORE_FAST               1 (dec)
+
+  8           6 LOAD_FAST                0 (flag)
+              8 GET_ITER
+        >>   10 FOR_ITER                21 (to 56)
+             14 STORE_FAST               2 (i)
+
+  9          16 LOAD_GLOBAL              1 (NULL + chr)
+             26 LOAD_FAST                2 (i)
+             28 LOAD_CONST               2 (1)
+             30 BINARY_OP                9 (>>)
+             34 CALL                     1
+             42 STORE_FAST               3 (decrypt)
+
+ 10          44 LOAD_FAST                1 (dec)
+             46 LOAD_FAST                3 (decrypt)
+             48 BINARY_OP               13 (+=)
+             52 STORE_FAST               1 (dec)
+             54 JUMP_BACKWARD           23 (to 10)
+
+  8     >>   56 END_FOR
+
+ 11          58 LOAD_FAST                1 (dec)
+             60 RETURN_VALUE

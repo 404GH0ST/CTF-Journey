@@ -1,0 +1,108 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_ce",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_successor",
+						"type": "address"
+					}
+				],
+				"name": "ascendToCrain",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "ce",
+				"outputs": [
+					{
+						"internalType": "contract CrainExecutive",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "crain",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Executive_Problem/020fc6afbb603263f80b08100e158f4d49b3492a52357406cde10cbfd3593275 (1)/contracts/Crain.sol": "Crain"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Executive_Problem/020fc6afbb603263f80b08100e158f4d49b3492a52357406cde10cbfd3593275 (1)/contracts/Crain.sol": {
+			"keccak256": "0xe43b037944bce3d3e7e827a213697a50151f248e74b3a48cf7457c1152cb348d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1cc93d573fe34587f7af633dd11843e588ac495f7fa75c7e20043d16bc47bdf5",
+				"dweb:/ipfs/QmaVAJUsCrBtcuE87FZcjmbuEsGtGx3yh3awUHFVuJLBxz"
+			]
+		},
+		"Executive_Problem/020fc6afbb603263f80b08100e158f4d49b3492a52357406cde10cbfd3593275 (1)/contracts/CrainExecutive.sol": {
+			"keccak256": "0x2b75a8d3ac12bf5008360d883ee678851f48260384e9265f081f7a32c9731a4b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://962ce4b03fb982524055d342bc8ad99f816bb162d7deb06cb652e9d283ecb300",
+				"dweb:/ipfs/Qmd8DLZ2iTWnRz1PDNRKuqtQkRGidxehLMSc1XbvayFDJP"
+			]
+		}
+	},
+	"version": 1
+}
